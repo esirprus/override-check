@@ -1,0 +1,9 @@
+{
+    "main.choose":"选择:\n1. 选择modlist.xml\n2. 选择一个mod文件夹\n输入'q'退出程序\n输入你的选择(1/2/q): ",
+    "main.modlist":"选择modlist.xml",
+    "main.modfolder":"选择一个mod文件夹",
+    "main.no_selected":"未选择",
+    "main.quit":"正在退出程序...再见！",
+    "main.invalid":"无效输入，请选择 1 或 2."
+}
+

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mods name="8.23">
+    <Vanilla />
+    <Workshop name="CsForBarotrauma" id="2795927223" />
+    <Workshop name="Lua For Barotrauma" id="2559634234" />
+    <Workshop name="问君此去几时还" id="2852411866" />
+    <Workshop name="BVTA Extension" id="2852898905" />
+    <Workshop name="Better Vanilla Turret Ammo" id="2683843415" />
+    <Workshop name="TheEntropy Food and Hunger" id="2836515154" />
+    <Workshop name="TheEntropy Pain" id="2836511856" />
+    <Workshop name="熵" id="2523120046" />
+    <Workshop name="Material IO" id="2850153096" />
+    <Workshop name="Erthex 的玩具箱" id="2852889113" />
+    <Local name="Satisfactory" />
+    <Workshop name="Beacons Extended" id="2389600483" />
+    <Workshop name="Creaosis' Pirates and Wrecks" id="2845322558" />
+    <Workshop name="Halo Weapons（UNSC）" id="2613399046" />
+    <Workshop name="Enhanced Armaments" id="2764968387" />
+    <Local name="NTedit" />
+</mods>

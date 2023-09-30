@@ -1,0 +1,9 @@
+{
+    "main.choose":"Choose an option:\n1. Select modlist.xml\n2. Select a mod folder\nType 'q' to quit\nEnter your choice (1/2/q): ",
+    "main.modlist":"Select modlist.xml",
+    "main.modfolder":"Select a mod folder",
+    "main.no_selected":"Nothing selected",
+    "main.quit":"Quitting the program. Goodbye!",
+    "main.invalid":"Invalid choice. Please choose either 1 or 2."
+}
+
