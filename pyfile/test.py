@@ -33,7 +33,6 @@ def process_mod(folder_path):
         print(f"Folder not found: {folder_path}")
         # If the folder doesn't exist, return empty tuples
         return (), ()
-    
 
-user_locale = os.getenv('LANG')
-print(user_locale)
+print(bool(None))
+print(os.path.dirname(os.path.abspath(__file__)))

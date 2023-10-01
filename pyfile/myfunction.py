@@ -1,69 +1,21 @@
+#some useful functions
 import os
+from lxml import etree #try use lxml instead of xml.etree
 import json
-import tkinter as tk
-from tkinter import filedialog
-from lxml import etree #try use lxml instead of xml
-import locale
 
 #TODO:add language support
 #TODO:modify prcess_mod 
 #FIXME? fix "/" and "\" problem
 #TODO:use lxml xpath to find case insensitive tag
 
-
-# Function to initialize path
-def initialize_path():
-    py_folder_path = os.path.dirname(os.path.abspath(__file__))
-    project_folder_path = os.path.join(py_folder_path, "..")
-    data_folder_path = os.path.join(project_folder_path, "data")
-    os.makedirs(data_folder_path, exist_ok=True)
-    json_file_path = os.path.join(data_folder_path, "user_data.json")
-    locales_folder_path = os.path.join(project_folder_path, "locales")
-    os.makedirs(locales_folder_path, exist_ok=True)
-    return {
-        "project_folder_path": project_folder_path,
-        "py_folder_path": py_folder_path,
-        "data_folder_path": data_folder_path,
-        "json_file_path": json_file_path,
-        "locales_folder_path": locales_folder_path
-    }
-#test
-#print(initialize_path())
-
-#fuction to get user data
-def initialize_user_data(json_file_path):
-    if os.path.exists(json_file_path) and os.path.getsize(json_file_path) > 0:
-        with open(json_file_path, 'r') as file:
-            user_data = json.load(file)
-            print("Welcome back! Your data:")
-            print(f"Local Path: {user_data['local_path']}")
+#Function to load json file,return a dictionary
+def load_json(file_path):
+    if os.path.exists(file_path):
+        with open(file_path, 'r', encoding='utf-8') as file:
+            data = json.load(file)
     else:
-        input("Please select your local path: ")
-        root = tk.Tk()
-        root.withdraw()
-        local_path = filedialog.askdirectory(title="Select a local path")
-        # Store the local path in the JSON file
-        user_data_dict = {
-            'local_path': local_path
-        }
-
-        with open(json_file_path, 'w') as file:
-            json.dump(user_data_dict, file)
-            print("Data stored successfully!")
-        with open(json_file_path, 'r',encoding='utf-8') as file:
-            user_data = json.load(file)
-    return user_data
-
-#function to get language and return the dictionary
-def load_locale_file(locales_folder_path):
-    env = os.getenv("LANG")
-    lang = env.split('.')[0].split('_')[0]
-    if lang != "zh":
-        lang = "en"
-    lang_file = lang + ".json"
-    with open(os.path.join(locales_folder_path,lang_file),'r',encoding='utf-8') as f:
-        locale_file = json.load(f)
-    return locale_file
+        data = {}
+    return data
 
 def extract_attr(element):
     identifiers = []

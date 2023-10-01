@@ -1,0 +1,11 @@
+{
+    "welcome": "Welcome to use barotrauma override checker!",
+    "localmod": "If you want to check local mods in your modlist, please enter 'f' to select your localmod path.",
+    "localmod_success": "Localmod path set successfully!",
+    "choose": "Choose an option:\n1. Select modlist.xml\n2. Select a mod folder\nType 'f' to select localmod path\nType 'q' to quit\nEnter your choice (1/2/f/q): ",
+    "modlist": "Select modlist.xml",
+    "modfolder": "Select a mod folder",
+    "no_selected": "Nothing selected",
+    "quit": "Quitting the program. Goodbye!",
+    "invalid": "Invalid choice. Please choose either 1 or 2."
+}

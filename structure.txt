@@ -1,0 +1,13 @@
+'''
+override-check
+├── data
+│   ├── locales
+│   │   ├── en.json
+│   │   └── zh.json
+│   └── data.json
+├── python
+│   ├── 1.py
+│   ├── 2.py
+│   └── ...
+├── main.py
+'''
