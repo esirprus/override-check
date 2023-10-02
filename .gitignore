@@ -1,0 +1,6 @@
+#ignore .vscode
+.vscode/
+#ignore path.json
+data/path.json
+#ignore name contains override-check
+*override-check*
