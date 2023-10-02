@@ -2,7 +2,7 @@
     "welcome": "欢迎使用潜渊症覆写检查器！",
     "localmod": "如果您想在mod列表中检查本地mod，请输入“f”选择本地mod路径。 ",
     "localmod_success": "本地mod路径设置成功！",
-    "choose": "选择:\n1. 选择modlist.xml\n2. 选择一个mod文件夹\n输入'f'选择本地mod路径\n输入'q'退出程序\n输入你的选择(1/2/q)：",
+    "choose": "选择:\n1. 选择modlist.xml\n2. 选择一个mod文件夹\n输入'f'选择本地mod路径\n输入'q'退出程序\n输入你的选择(1/2/f/q)：",
     "modlist": "选择modlist.xml",
     "modfolder": "选择一个mod文件夹",
     "no_selected": "未选择",

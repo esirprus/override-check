@@ -6,7 +6,7 @@ import json
 
 path = i.initialize_path(os.path.abspath(__file__))
 locale_f = i.load_locale_file(path["locales_folder_path"])
-print(locale_f)
+#print(locale_f)
 root = tk.Tk()
 root.withdraw()
 #welcome message
